@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background: rgb(21, 21, 21);
+    width: 100%;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.container { 
+    padding: 1px 0px;
+    font-family: "Montserrat", sans-serif;
+    background: black;
+    width: 100%;
+    
+    }
+    
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.container a {
+    color: white;
+    padding: 10px 45px;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.container #homee:hover {
+    background-color:white   ;
+    color: black;
+    transition: background-color 0.2s ease;
+    border-radius: 15px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+}
+
+
+
+
+#homee {
+    background: rgb(31, 86, 53);
+    font-size: 25px;
+    padding: 15 px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.vid1{
+    position: relative;
+    width: 100%;
+}
+
+.vid1 .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 55px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background: rgb(31, 86, 53);
+    color: white;
+    font-weight: bold;
+    opacity: 90%;
+    cursor: pointer;
+    border: ridge 3px white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vid1 .btn:hover{
+    background-color: white   ;
+    color: black;
+    transition: background-color 0.1s ease;
+    border-radius: 15px;
+}
+
+.vid1 .mclog{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 15%;
+}
+
+.abmc {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 252, 240);
+    padding: 150px;
+    
+}
+
+.abmc img{
+    margin-top: 5%;
+    height: 400px;
+    width: 50%;
+    
+}
+.abmc h1{
+    margin: 0;
+    color: black;
+    font-size: 50px;
+}
+
+.abmc p{
+    margin-top: 3%;
+    font-size: 22px;
+    margin-right: 25%;
+    
+}
+
+.abmc .learnMC{
+    padding: 40px;
+    text-align: center;
+    margin-left: -12%;
+    margin-top: 2%;
+    margin-right: 60%;
+}
+
+.abmc .learnMC a{
+    background: rgb(31, 86, 53);
+    color: white;
+    text-decoration: white;
+    padding: 20px 30px;
+    
+    
+    
+}
+
+.abmc .learnvalo a:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 1s ease;
+    padding: 30px;
+    
+}
+
+.agentsval {
+    background-color: rgb(254, 72, 86);
+    margin: 0px;
+    padding: 150px;
+
+}
