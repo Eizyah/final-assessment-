@@ -1,0 +1,335 @@
+@font-face{
+    font-family: Tungsten;
+    src: url(../fonts/Tungsten-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    background: rgb(24, 24, 24);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.container {
+    position: fixed;
+    top: 0%;
+    padding: 1px 0px;
+    z-index: 1000;
+    background: black;
+    width: 100%;
+    font-weight: 1;
+    
+    }
+    
+#navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.container a {
+    color: white;
+    padding: 10px 45px;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.container #homee:hover {
+    background-color:white   ;
+    color: black;
+    transition: background-color 0.2s ease;
+    border-radius: 15px;
+    font-weight: 1px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+}
+
+
+
+
+#homee {
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.gameslider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 4%;
+    width: 100%;
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+    
+}
+
+.slides {
+    
+    display: flex;
+    width: 360%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    gap: 100px;
+    
+    
+    
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img, .content {
+    width: 100%;
+    flex: 1;
+    
+    
+    
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    position: cover;
+    
+    
+}
+
+
+.content{
+    flex: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+    z-index: 2;
+    
+}
+
+.content h4{
+    color: white;
+    
+}
+
+.content h1{
+    color: white;
+}
+
+.content a{
+    
+    border: 2px white solid;
+    color: white;
+    text-decoration: white;
+    padding: 25px 40px;
+    font-weight: bold;
+    
+}
+
+.content a:hover{
+    background-color: rgb(6, 77, 124);
+    color: white;
+    transition: background-color .5s ease;
+    padding: 25px 40px;
+}
+
+.nav-buttons, .dots{
+    position: absolute;
+    z-index: 3;
+}
+
+.nav-buttons{
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-buttons button{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dots{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.dot, .dot.ctive{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: rgb(75, 109, 155);
+    color: blue;
+}
+
+.newscontainer {
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px 0px;
+    
+
+}
+
+.newscontainer h1{
+    font-family: Tungsten;
+    font-size: 120px;
+    color: white;
+    margin-left: 0%;
+
+}
+
+.newscontainer h2{
+    font-size: 30px;
+    color: white;
+    margin-left: 0%;
+
+}
+
+
+.newscontainer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.newscontainer a:hover{
+    
+    color: rgb(192, 192, 192);
+    transition: color .2s ease;
+    
+}
+
+.newsnametitle{
+    margin-left: 40%;
+}
+
+.newsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+
+}
+
+.newsimg {
+    background-color: rgb(53, 53, 53);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.newsimg:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.newsimg img{
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+
+}
+
+.newsimg:hover img{
+    transform: scale(1.03);
+
+}
+
+.newscontent {
+    padding: 15px;
+}
+
+.tags {
+    color: rgb(229, 57, 53);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.date{
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.title{
+    font-size: 20px;
+    color: white;
+}
+
+.description{
+    font-size: 15px;
+    color: white;
+}   
+
+.footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+.footer img{
+    width: 200px;
+    color: white;
+    
+}
+
+.footer img:hover{
+    color: white;
+    transition: color 0.3s ease;
+    
+}

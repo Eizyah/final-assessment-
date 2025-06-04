@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mokyojin</title>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <div id="navdiv">
+                <div id="logo"><a href='/Home/index.html'><img src="Untitled.png" id="logo"></a></div>
+                <ul id="menu">
+                    <li><a href="/Home/index.html" id="homee">Home</a></li>
+                    <li><a href="/Valorantpage/index.html">Valorant</a></li>
+                    <li><a href="/Minecraftpage/index.html">Minecraft</a></li>
+                    <li><a href="/CS2page/index.html">CS2</a></li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="gameslider">
+        <div class="slides" id="slides">
+            <div class="game">
+                <div class="img">
+                <img src="valorant.png" alt="valo">
+                </div>
+                <div class="content">
+                    <h4>Valorant</h4>
+                    <h1>Play The Game Now!</h1>
+                    <a href="/Valorantpage/index.html" class="btn">PLAY VALORANT</a>
+                </div>
+            </div>
+            <div class="game">
+                <div class="img">
+                <img src="minecraft.png" alt="minecraft">
+                </div>
+                <div class="content">
+                    <h4>Minecraft</h4>
+                    <h1>Play The Game Now!</h1>
+                    <a href="/Minecraftpage/index.html" class="btn">PLAY MINECRAFT</a>
+                </div>
+            </div>
+            <div class="game">
+                <div class="img">
+                <img src="cs2.jpg" alt="cs2">
+                </div>
+                <div class="content">
+                    <h4>Counter-Strike 2</h4>
+                    <h1>Play The Game Now!</h1>
+                    <a href="/CS2page/index.html" class="btn">PLAY Counter-Strike 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="previous()"><</button>      
+            <button onclick="next()">></button>     
+        </div>
+        <div class="dots" id="dots">
+            <div class="dot active" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+    </div>
+    <div class="newscontainer">
+        <h1>THE LATEST NEWS</h1>
+        <div class="newsnametitle">
+        <h2>VALORANT NEWS</h2>
+        </div>
+        <h3><a href="https://playvalorant.com/en-us/news/">SEE MORE NEWS</a></h3>
+        <div class="newsgrid">
+            <div class="newsimg">
+                <a href="https://www.youtube.com/watch?v=NiedTYE_HyA">
+                    <img src="n3.png" alt="news 1">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">COMMUNITY</span><span class="date">5/31/2025</span></div>
+                    <h2 class="title">Your VALORANT Stories - Breaking Through</h2>
+                    <p class="description">Korean VALORANT pro Gen.G t3xture shares his story of pushing through pressure to reach his ultimate potential.</p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://www.youtube.com/watch?v=jAj_nbWYb7g">
+                    <img src="n1.png" alt="news 2">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">GAME UPDATES</span><span class="date">6/2/2025</span></div>
+                    <h2 class="title">WHY WE FIGHT // EGO ft. Qing Madi // Year 5 Music Video - VALORANT</h2>
+                    <p class="description">For love. For family. For redemption. For remembrance. For life. This is why we fight.</p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://valorantesports.com/en-US/news/masters-toronto-map-reveal-showmatch">
+                    <img src="n2.png" alt="news 3">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">ESPORTS</span><span class="date">6/3/2025</span></div>
+                    <h2 class="title">Masters Toronto: Map Reveal showmatch</h2>
+                    <p class="description">Before Masters Toronto Grand Final, there is one more showdown in store: Tarik vs. Disguised Toast!</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="newscontainer">
+        <div class="newsnametitle">
+        <h2>MINECRAFT NEWS</h2>
+        </div>
+        <h3><a href="https://www.minecraft.net/en-us">SEE MORE NEWS</a></h3>
+        <div class="newsgrid">
+            <div class="newsimg">
+                <a href="https://www.minecraft.net/en-us/article/minecraft-1-21-6-pre-release-2">
+                    <img src="m1.png" alt="news 1">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">NEWS</span><span class="date">6/2/2025</span></div>
+                    <h2 class="title">Minecraft 1.21.6 Pre-Release 2</h2>
+                    <p class="description">We're kicking the week off with another pre-release, including some music and happy ghast bug fixes. The Chase the Skies drop is getting closer and the pre-release schedule might include more than one pre-release per week.</p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://www.minecraft.net/en-us/article/let-s-play--actions---stuff">
+                    <img src="m2.png" alt="news 2">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">MARKETPLACE</span><span class="date">6/2/2025</span></div>
+                    <h2 class="title">Let's Play: Actions & Stuff</h2>
+                    <p class="description">Oreville Studio gives Minecraft a makeover! </p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://www.minecraft.net/en-us/article/marketplace-content-june-2025">
+                    <img src="m3.png" alt="news 3">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">MARKETPLACE</span><span class="date">6/3/2025</span></div>
+                    <h2 class="title">Marketplace Content: June 2025</h2>
+                    <p class="description">Let’s have a good chuckle with this month’s Marketplace Pass and Realms Plus!</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="newscontainer">
+        <div class="newsnametitle">
+        <h2>COUNTER-STRIKE 2 NEWS</h2>
+        </div>
+        <h2><a href="https://playvalorant.com/en-us/news/">SEE MORE NEWS</a></h2>
+        <div class="newsgrid">
+            <div class="newsimg">
+                <a href="https://www.counter-strike.net/newsentry/529848048073835651">
+                    <img src="1.png" alt="news 1">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">NEWS</span><span class="date">5/30/2025</span></div>
+                    <h2 class="title">Capture the Moment</h2>
+                    <p class="description">Activate your Austin 2025 Viewer Pass and set your Pick'Ems before the first matches start, and you'll be well on your way to upgrading your Challenge Coin and earning Souvenir Tokens. Speaking of which...</p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://www.counter-strike.net/newsentry/529847413482979949">
+                    <img src="2.png" alt="news 2" height="230px">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">NEWS</span><span class="date">5/23/2025</span></div>
+                    <h2 class="title">BLAST.TV Austin Major 2025</h2>
+                    <p class="description">Like a dust storm on the horizon, the BLAST.TV Austin Major is fast approaching. Join us June 3rd as the first stage of the major gets underway! </p>
+                </div>
+            </div>
+            <div class="newsimg">
+                <a href="https://www.counter-strike.net/newsentry/529846144626327818">
+                    <img src="3.png" alt="news 3" height="220px">
+                </a>
+                <div class="newscontent">
+                    <div><span class="tags">NEWS</span><span class="date">5/8/2025</span></div>
+                    <h2 class="title">Mission Possible</h2>
+                    <p class="description">Today's update includes several community maps, a rearranging of casual and deathmatch map groups, and the introduction of weekly missions!</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="footer">
+        <p>All rights belongs to the original owners of all the games listed.  </p>
+        <a href="https://playvalorant.com/en-us/">
+            <img src="riot.png" alt="riot">
+        </a>
+        <a href="https://www.minecraft.net/en-us">
+            <img src="minecraftlogo.png" alt="mc">
+        </a>
+        <a href="https://www.counter-strike.net/cs2">
+            <img src="cs2logo.png" alt="cs2">
+        </a>
+    </div>
+    <script>
+    let index = 0;
+const slides = document.getElementById("slides");
+const dots = document.querySelectorAll(".dot");
+
+
+function showSlides(i) {
+    index = i;
+    slides.style.transform = `translateX(-${index * 34}%)`;
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+}
+
+function next(){
+    index = (index + 1) % dots.length;
+    showSlides(index);
+}
+
+function previous(){
+    index = (index - 1 + dots.length) % dots.length;
+    showSlides(index)
+}
+
+function goToSlide(i){
+    showSlides(i);
+}
+    </script>
+</body>
